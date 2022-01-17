@@ -1,8 +1,10 @@
+/***** COMMON *****/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -16,97 +18,192 @@ body {
 
 a {
   text-decoration: none;
-    color: #fff;
+  color: #fff;
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+.h3, h3 {
+  font-size: 1.75rem;
+}
+.h4, h4 {
+  font-size: 1.5rem;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+svg {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.fixed {
-  position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-.navbar {
-  background-color: #1d2228;
-height: 70px;
-/* display: flex;
-align-items: center; */
-}
-.nav-flex {
-  display: flex;
-}
-.navbar-ul {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.mr-auto {
-  margin-right: auto!important;
-}
-.navbar-nav .nav-item .nav-link {
-  padding: 1.1em 1em;
-  font-size: 90%;
-    font-weight: 400;
-    /* padding: 0.75em 0; */
-    letter-spacing: 1px;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-}
-
-.navbar-contact {
-  margin-left: auto;
-}
-
-
-
-.home-image {
+.text-center {
   text-align: center;
-  color: #fff;
-  background-image: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),url(https://res.cloudinary.com/dcs/image/upload/v1567019625/Portfolio%20Website/portfolio-home-page-header.jpg);
-background-image: url(https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: 50%;
-    background-size: cover;
-    display: block;
 }
 
-.home-image .intro-text {
-  padding-top: 300px;
-  padding-bottom: 200px;
+.bg-gray {
+  background-color: #f8f9fa;
 }
-.home-image .intro-text .h2-intro-text {
-  font-style: italic;
-  font-size: 40px;
-  line-height: 40px;
-  margin-bottom: 25px;
-  margin-top: 0;
-  font-family: "Droid Serif",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+.gray-text {
+  color: #6c757d;
 }
-.home-image .intro-text .h1-intro-text {
-  font-size: 75px;
+
+.section {
+  padding: 100px 0;
+}
+
+.btn {
   font-weight: 700;
-  line-height: 75px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  max-width: 1110px;
-  font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  border-radius: 5px;
+  max-width: 235px;
+  margin: 0 auto;
+  letter-spacing: 0.7px;
+  cursor: pointer;
 }
 .btn-primary {
   background-color: #fb8122;
   border-color: #fb8122;
-    font-size: 18px;
-    padding: 20px 40px;
-    color: #fff;
-    text-transform: uppercase;
+  font-size: 18px;
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: uppercase;
 }
-.btn {
-  font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+.btn-primary:active, 
+.btn-primary:focus, 
+.btn-primary:hover {
+  background-color: #fb7122;
+  border-color: #fb7122;
+}
+
+.section-title {
+  line-height: 1.2;
+}
+
+.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.section-subheading {
+  font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    line-height: 1.2;
+    font-family: "Droid Serif", apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    color: #6c757d;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/***** HEADER *****/
+.fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header {
+  background-color: #1d2228;
+  height: 70px;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-menu, 
+.navbar-contact {
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  letter-spacing: 1px;
+}
+.navbar-contact {
+  margin-left: auto;
+}
+.navbar-menu .nav-item .nav-link {
+  text-transform: uppercase;
+}
+
+.nav-item:not(:last-child) {
+  padding-right: 30px ;
+  align-items: center;
+}
+
+.nav-item .nav-link:hover {
+  color: #fb8122;
+} 
+
+.nav-item .nav-link.linkedin,
+.nav-item .nav-link.github {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+/***** INTRO *****/
+.intro {
+  color: #fff;
+  background-image: url(photo1.jfif);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 50%;
+  background-size: cover;
+  display: block;
+}
+
+.intro-text {
+  padding-top: 270px;
+  padding-bottom: 200px;
+}
+.h2-intro-text {
+  font-style: italic;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 0;
+}
+.h1-intro-text {
+  font-size: 60px;
   font-weight: 700;
+  line-height: 75px;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 50px auto;
 }
 
 
@@ -114,6 +211,101 @@ background-image: url(https://images.unsplash.com/photo-1499914485622-a88fac5369
 
 
 
+
+
+
+/***** PROJECTS *****/
+
+
+/***** ABOUT *****/
+.about-row {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.about-me {
+  margin-bottom: 50px;
+  margin-top: 1.5rem;
+}
+
+.about-me img {
+  width: 225px;
+  height: 225px;
+  border: 7px solid rgba(0,0,0,.1);
+  border-radius: 50%
+}
+.about-me h4 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  text-transform: none;
+}
+.about-me p:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+
+/***** CONTACTS *****/
+.contact-row {
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.contact-details,
+.contact-links,
+.contact-btn {
+  width: 30%;
+}
+
+.contact-details p:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.contact-details p a {
+  color: #fb8122;
+}
+.contact-details p a:hover {
+  color: #fb7122;
+  text-decoration: underline;
+}
+
+.contact-links svg {
+  vertical-align: baseline;
+}
+
+
+
+/***** list-inline *****/
+ul.social-buttons {
+  margin-bottom: 0;
+}
+.list-inline, .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.list-inline-item {
+  display: inline-block;
+}
+ul.social-buttons li a {
+  font-size: 3rem;
+  transition: all .3s;
+  color: #1d2228;
+  margin-left: 8%;
+}
+ul.social-buttons li a:active, 
+ul.social-buttons li a:hover {
+  color: #fb8122;
+}
+
+
+
+/***** FOOTER *****/
 .footer {
   padding: 15px 0;
   height: 70px;
