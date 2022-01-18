@@ -11,12 +11,12 @@
   <body>
 
     <!-- HEADER -->
-    <header class="header fixed" id="home">
+    <header class="header fixed">
       <div class="container navbar">     
 
         <ul class="navbar-menu">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#intro">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
@@ -54,13 +54,13 @@
     </header>
 
     <!-- INTRO -->
-    <section class="intro text-center">
+    <section class="intro text-center" id="intro">
       <div class="container">
         <div class="intro-text">
           <h2 class="h2-intro-text">Hi! I'm Julia</h2>
           <h1 class="h1-intro-text">Junior Front End Developer</h1>
-          <div class="btn btn-primary">
-            <a href="#contact">Contact Me</a>
+          <div class="intro-btn">
+            <a class="btn btn-primary" href="#contact">Contact Me</a>
           </div>
         </div>
       </div>
@@ -76,17 +76,17 @@
         </div>
 
         <div class="row project-row"> 
-          <!-- ITEM -->
+          <!-- ITEM 1 -->
           <div class="project-item">
 
-            <a class="project-link" data-toggle="modal" href="#projectModal2">
+            <a class="project-link" data-toggle="modal" href="#projectModal1">
               <div class="project-hover">
                 <div class="project-hover-content">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M448 344v112a23.94 23.94 0 0 1-24 24H312c-21.39 0-32.09-25.9-17-41l36.2-36.2L224 295.6 116.77 402.9 153 439c15.09 15.1 4.39 41-17 41H24a23.94 23.94 0 0 1-24-24V344c0-21.4 25.89-32.1 41-17l36.19 36.2L184.46 256 77.18 148.7 41 185c-15.1 15.1-41 4.4-41-17V56a23.94 23.94 0 0 1 24-24h112c21.39 0 32.09 25.9 17 41l-36.2 36.2L224 216.4l107.23-107.3L295 73c-15.09-15.1-4.39-41 17-41h112a23.94 23.94 0 0 1 24 24v112c0 21.4-25.89 32.1-41 17l-36.19-36.2L263.54 256l107.28 107.3L407 327.1c15.1-15.2 41-4.5 41 16.9z"></path>
                   </svg>
                 </div>
               </div>
-              <img class="img-fluid" src="inside1.png" alt="Inside">
+              <div class="project-img" alt="Inside"></div>
             </a>
 
             <div class="project-caption">
@@ -94,40 +94,36 @@
               <p class="gray-text">Website for Language School</p>
             </div>
 
-            <!-- MODAL -->
-            <div style="display: block" class="project-modal modal fade" id="projectModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <!-- MODAL 1 -->
+            <div style="display: none" class="modal fade" id="projectModal1" tabindex="-1" role="dialog" aria-hidden="true">
               
               <div class="modal-dialog">
 
-                <div class="modal-content">
+                <div class="modal-container">
 
                   <div class="close-modal" data-dismiss="modal">
-                    <div class="close-btn">X</div>
+                    <div class="close-btn"><img src="cancel.png"/></div>
                   </div>
 
-                  <div class="modal-container">
-                    <div class="row">
-                      <div class="modal-body">
-                        <h2 class="modal-title" >Inside</h2>
-                        <p class="modal-subtitle gray-text">Inside Website</p>
-                        <img class="img-fluid d-block" src="inside1.png" alt="">
-                        <p>Meetup is an application allowing registered users to add meetings
-                          and check in attendees. A logged in user can view meetings and see
-                          and filter the attendees. Users that have arranged the meeting can
-                          also email users and delete them where required. The application 
-                          uses the Firebase real time database and Firebase authentication
-                        </p>
-                        <ul class="list-inline">
-                          <li>Technologies Used</li>
-                          <li>React, HTML, CSS, Bootstrap</li>
-                        </ul>
-                        <ul class="list-inline">
-                          <li>
-                            <a href="https://inside-language.com/" target="_blank" rel="noopener noreferrer">https://inside-language.com/</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                  <div class="modal-content">
+                    <h2 class="modal-title" >Inside</h2>
+                    <p class="modal-subtitle gray-text">Website for Language School</p>
+                    <div class="modal-img" alt="Inside"></div>
+                    <p>Meetup is an application allowing registered users to add meetings
+                      and check in attendees. A logged in user can view meetings and see
+                      and filter the attendees. Users that have arranged the meeting can
+                      also email users and delete them where required. The application 
+                      uses the Firebase real time database and Firebase authentication
+                    </p>
+                    <ul class="list-inline">
+                      <li>Technologies Used</li>
+                      <li>React, HTML, CSS, Bootstrap</li>
+                    </ul>
+                    <ul class="list-inline">
+                      <li>
+                        <a href="https://inside-language.com/" target="_blank" rel="noopener noreferrer">https://inside-language.com/</a>
+                      </li>
+                    </ul>
                   </div>
 
                 </div>
