@@ -52,8 +52,32 @@ img {
   border-style: none;
   max-width: 100%;
 }
-svg {
+/* svg {
   overflow: hidden;
+} */
+
+.nav-icon,
+.modal-open-icon,
+.skills-icon,
+.contact-icon {
+  height: 1em;
+  width: 1em;
+  stroke-width: 0;
+  fill: currentColor;
+  stroke: currentColor;
+}
+.modal-close-icon {
+  height: 40px;
+  width: 40px;
+  stroke-width: 0;
+  fill: #6c757d;
+  stroke: currentColor;
+}
+.modal-close-icon:hover {
+ fill: #fb7122;
+}
+.skills-icon {
+  font-size: 3rem;
 }
 
 .container {
@@ -102,7 +126,7 @@ svg {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 .section-title {
   line-height: 1.2;
@@ -119,7 +143,7 @@ svg {
   font-size: 16px;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 75px;
+    margin-bottom: 70px;
     line-height: 1.2;
     color: #6c757d;
 }
@@ -326,12 +350,10 @@ svg {
   border-radius: 0.3rem;
   outline: 0;
 }
-.close-modal {
+.modal-close-btn {
   position: absolute;
   top: 25px;
   right: 25px;
-  width: 35px;
-  height: 35px;
   cursor: pointer;
   background-color: transparent;
 }
@@ -404,8 +426,8 @@ svg {
   margin-bottom: 1rem;
 }
 
-.dev-icons {
-  font-size: 3rem;
+.skills h4 {
+  margin-bottom: 27px;
 }
 
 
