@@ -6,6 +6,10 @@
   outline: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 
@@ -67,8 +71,8 @@ img {
   stroke: currentColor;
 }
 .modal-close-icon {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   stroke-width: 0;
   fill: #6c757d;
   stroke: currentColor;
@@ -146,6 +150,9 @@ img {
     margin-bottom: 70px;
     line-height: 1.2;
     color: #6c757d;
+}
+.section-heading.h2-pet-projects {
+  margin-top: 50px;
 }
 
 .row {
@@ -288,12 +295,10 @@ img {
 .project-img {
   height: 100%;
   width: auto;
-}
-.project-img {
-  background-image: url(inside1.png);
   background-position: center;
   background-size: cover;
 }
+
 
 
 
@@ -332,9 +337,13 @@ img {
   overflow-x: hidden;
   overflow-y: auto;
 }
+.modal.fade {
+  background: #000000c7;
+}
 .modal-dialog {
-  margin: 1rem;
+  margin: 1rem auto;
   max-width: 100vw;
+  width: 55%; /**/
   position: relative;
   pointer-events: none;
 }
@@ -347,7 +356,7 @@ img {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.2);
-  border-radius: 0.3rem;
+  border-radius: 5px;
   outline: 0;
 }
 .modal-close-btn {
@@ -360,7 +369,7 @@ img {
 .modal-content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 2.5rem;
 }
 
 .modal h2 {
@@ -380,15 +389,15 @@ img {
 .modal .modal-img {
   height: 340px;
   width: auto;
-  max-width: 500px;
+  max-width: 500px; 
   margin: 0 auto;
   margin-bottom: 30px;
-  background-image: url(inside1.png);
   background-position: center;
   background-size: cover;
+  box-shadow: 1px 3px 15px -7px rgb(132 132 132 / 44%);
 }
 
-.modal ul.list-inline {
+.modal ul.list-inline:not(:last-child) {
   margin-top: 0;
   margin-bottom: 30px;
 }
