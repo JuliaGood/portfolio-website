@@ -56,9 +56,6 @@ img {
   border-style: none;
   max-width: 100%;
 }
-/* svg {
-  overflow: hidden;
-} */
 
 .nav-icon,
 .modal-open-icon,
@@ -145,11 +142,11 @@ img {
 }
 .section-subheading {
   font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 70px;
-    line-height: 1.2;
-    color: #6c757d;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 70px;
+  line-height: 1.2;
+  color: #6c757d;
 }
 .section-heading.h2-pet-projects {
   margin-top: 50px;
@@ -221,10 +218,10 @@ img {
 /***** INTRO *****/
 .intro {
   color: #fff;
-  background-image: url(photo1.jfif);
+  background-image: url(img/photo-intro.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: 50%;
+  background-position: center;
   background-size: cover;
   display: block;
 }
@@ -291,14 +288,12 @@ img {
   color: #fff;
 }
 
-
 .project-img {
   height: 100%;
   width: auto;
   background-position: center;
   background-size: cover;
 }
-
 
 
 
@@ -319,12 +314,6 @@ img {
 }
 
 /***** PROJECT MODAL *****/
-
-/* .modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto;
-} */
-
 .modal {
   position: fixed;
   top: 0;
@@ -334,6 +323,7 @@ img {
   width: 100%;
   height: 100%;
   outline: 0;
+  padding: 20px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -341,9 +331,9 @@ img {
   background: #000000c7;
 }
 .modal-dialog {
-  margin: 1rem auto;
-  max-width: 100vw;
-  width: 55%; /**/
+  margin: 0 auto;
+  width: 100%;
+  max-width: 835px;
   position: relative;
   pointer-events: none;
 }
@@ -387,12 +377,12 @@ img {
 }
 
 .modal .modal-img {
-  height: 340px;
+  height: 400px;
   width: auto;
-  max-width: 500px; 
+  /* max-width: 500px;  */
   margin: 0 auto;
   margin-bottom: 30px;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   box-shadow: 1px 3px 15px -7px rgb(132 132 132 / 44%);
 }
