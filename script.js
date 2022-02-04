@@ -1,5 +1,7 @@
 const projectLinks = document.querySelectorAll(".project-link");
 const closeButtons = document.querySelectorAll(".modal-close-btn");
+const burgerBtn = document.querySelector(".burger-btn");
+const mobileNav = document.querySelector(".mobile-nav");
 
 const openPopup = (event) => {
   event.preventDefault();
@@ -20,4 +22,9 @@ Array.from(projectLinks).forEach((link) => {
 
 Array.from(closeButtons).forEach((btn) => {
   btn.addEventListener("click", closePopup);
+});
+
+burgerBtn.addEventListener("click", () => {
+  burgerBtn.classList.toggle("open");
+  mobileNav.classList.toggle("open");
 });
