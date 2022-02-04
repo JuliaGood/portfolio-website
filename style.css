@@ -315,6 +315,7 @@ img {
 }
 
 .mobile-nav {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -347,7 +348,7 @@ img {
   text-shadow: 2px 1px 7px rgb(105 105 105 / 37%);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   .navbar-menu,
   .navbar-contact {
     display: none;
@@ -357,6 +358,9 @@ img {
   }
   .navbar {
     justify-content: flex-end;
+  }
+  .mobile-nav {
+    display: block;
   }
 }
 
