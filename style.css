@@ -572,7 +572,7 @@ img {
 }
 
 .modal h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -618,7 +618,7 @@ img {
     padding: 1rem 2rem;
   }
   .modal h2 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   .modal .modal-img {
     height: 370px;
@@ -635,7 +635,7 @@ img {
     padding: 1rem 1.5rem;
   }
   .modal h2 {
-    font-size: 2.3em;
+    font-size: 2.0em;
   }
   .modal .modal-img {
     height: 350px;
@@ -660,7 +660,7 @@ img {
     padding: 1rem;
   }
   .modal h2 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   .modal .modal-img {
     height: 270px;
@@ -676,7 +676,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .modal h2 {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   .modal .modal-img {
     height: 230px;
@@ -688,7 +688,7 @@ img {
 }
 @media screen and (max-width: 320px) {
   .modal h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
   .modal .modal-img {
     height: 130px;
