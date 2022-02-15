@@ -576,13 +576,25 @@ img {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-.modal p {
-  margin-bottom: 30px;
+.modal .modal-desc {
+  /* margin-bottom: 30px; */
+  /* text-align: left; */
+  text-align: center;
+  text-align: justify;
 }
-.modal p.modal-subtitle {
+.modal p {
+  margin: 10px 0;
+}
+.modal .modal-desc-link {
+  text-decoration: none;
+}
+.modal .modal-desc-link:hover {
+  text-decoration: underline;
+}
+.modal .modal-subtitle {
   font-size: 16px;
   font-style: italic;
-  margin: 20px 0 30px;
+  /* margin: 20px 0 30px; */
 }
 
 .modal .modal-img {
@@ -590,9 +602,13 @@ img {
   width: auto;
   /* max-width: 500px;  */
   margin: 0 auto;
-  margin-bottom: 30px;
-  background-position: top center;
-  background-size: cover;
+  /* margin-bottom: 30px; */
+  margin: 30px 0;
+  background-repeat: no-repeat;
+  background-position: top center; /*1*/
+  background-position: center; /*2*/
+  background-size: cover; /*1*/
+  background-size: contain; /*2*/
   box-shadow: 1px 3px 15px -7px rgb(132 132 132 / 44%);
 }
 

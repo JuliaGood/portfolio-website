@@ -8,13 +8,13 @@ const openPopup = (event) => {
   event.preventDefault();
   const popupName = event.currentTarget.getAttribute("data-popup-open");
   document.querySelector(`.modal[data-popup="${popupName}"]`).style.display = "block";
-  document.querySelector('body').style.overflow = "hidden";
+  document.querySelector("body").style.overflow = "hidden";
 }
 
 const closePopup = (event) => {
   event.preventDefault();
   event.currentTarget.closest(".modal").style.display = "none";
-  document.querySelector('body').style.overflow = "visible";
+  document.querySelector("body").style.overflow = "visible";
 }
 
 Array.from(projectLinks).forEach((link) => {
