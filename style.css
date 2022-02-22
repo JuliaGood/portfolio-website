@@ -23,7 +23,7 @@ body {
   background-color: #fff;
 }
 
-body.popup-open {
+body.no-scroll {
   overflow: hidden;
 }
 
@@ -328,6 +328,23 @@ img {
   width: 100%;
   transition: all .3s ease-in-out;
   transform: translateX(-100%);
+}
+@media screen and (max-width: 768px) {
+  .header {
+    height: 60px;
+  }
+  .mobile-nav {
+    padding-top: 60px;
+  }
+  .burger-line-1, 
+  .burger-line-2, 
+  .burger-line-3 {
+    height: 2px;
+    width: 30px;
+  }
+  .open .burger-line-3 {
+    transform: rotate(45deg) translate(-6px, -5px);
+  }
 }
 .mobile-nav.open {
   transform: translateX(0);
