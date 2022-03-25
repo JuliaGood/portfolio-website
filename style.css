@@ -837,12 +837,14 @@ img {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.contact-details p a {
+.contact-details p a,
+.about-me p a {
   /* color: #fb8122; */
   color: #212529;
   text-decoration: none;
 }
-.contact-details p a:hover {
+.contact-details p a:hover,
+.about-me p a:hover {
   color: #fb7122;
   text-decoration: underline;
 }
